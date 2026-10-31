@@ -132,9 +132,10 @@
   <ul>
     <li><strong>INTERNET</strong> and <strong>ACCESS_NETWORK_STATE</strong>: Google AdMob uses these to load the rewarded ads you choose to watch, and Google Play Billing uses them to show prices and process purchases.</li>
     <li><strong>AD_ID</strong>: lets the Google Mobile Ads SDK read the advertising ID, as described above.</li>
+    <li><strong>ACCESS_ADSERVICES_AD_ID</strong>, <strong>ACCESS_ADSERVICES_ATTRIBUTION</strong> and <strong>ACCESS_ADSERVICES_TOPICS</strong>: let the Google Mobile Ads SDK use Android's Privacy Sandbox advertising APIs where your device supports them. You can manage these in your device's privacy settings.</li>
     <li><strong>BILLING</strong>: lets Google Play process optional purchases.</li>
     <li><strong>POST_NOTIFICATIONS</strong>: shows the reminders you agreed to. Android asks you before granting it.</li>
-    <li><strong>RECEIVE_BOOT_COMPLETED</strong>, <strong>WAKE_LOCK</strong> and similar background-work permissions: keep scheduled reminders after a restart, and are used by Google libraries for background work.</li>
+    <li><strong>RECEIVE_BOOT_COMPLETED</strong>, <strong>WAKE_LOCK</strong> and <strong>FOREGROUND_SERVICE</strong>: keep scheduled reminders after a restart, and let Google libraries finish short background work.</li>
     <li><strong>VIBRATE</strong>: soft haptic feedback, which you can turn off in Settings.</li>
   </ul>
   <p>The game does not use your camera, microphone, location services, contacts or files outside its own storage.</p>
